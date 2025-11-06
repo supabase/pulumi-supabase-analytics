@@ -1,0 +1,36 @@
+{
+    "auto-aliasing": {
+        "resources": {
+            "logflare_endpoint": {
+                "current": "logflare:index/endpoint:Endpoint",
+                "majorVersion": 1
+            },
+            "logflare_source": {
+                "current": "logflare:index/source:Source",
+                "majorVersion": 1,
+                "fields": {
+                    "notifications": {
+                        "fields": {
+                            "team_user_ids_for_email": {
+                                "maxItemsOne": false
+                            },
+                            "team_user_ids_for_schema_updates": {
+                                "maxItemsOne": false
+                            },
+                            "team_user_ids_for_sms": {
+                                "maxItemsOne": false
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "datasources": {
+            "logflare_endpoint_query": {
+                "current": "logflare:index/getEndpointQuery:getEndpointQuery",
+                "majorVersion": 1
+            }
+        }
+    },
+    "auto-settings": {}
+}
